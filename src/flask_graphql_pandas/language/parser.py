@@ -26,6 +26,19 @@ class DirectiveParser(object):
                     parsed_object[f.name.value] = d.arguments
         return parsed_object
 
+def get_schema(query     : str, 
+               directive : str = "_pandas") -> dict:
+    """Extract transformation from directive `args: directive` in the query `args: query`.
+    
+    Args:
+        query (str): A string of query of GraphQL.
+        directive (str): A string of directive used in the query.
+    
+    Returns:
+        dict: A json object of transformation schema.
+    """
+    schema = query
+    return schema
 
 # string = '{\n  template(key: "hello") @_(keyBy: "values") {\n    key @format(as :".4f") @_(to: "float")\n    value\n  }\n}'
 # s = source.Source(body=string)
