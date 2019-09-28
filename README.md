@@ -1,4 +1,4 @@
-# flask-graphql-pandas
+# Flask GraphQL Pandas
 
 Apply [pandas](https://pandas.pydata.org/pandas-docs/stable/) in GraphQL queries
 
